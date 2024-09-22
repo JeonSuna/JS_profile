@@ -1,0 +1,1 @@
+[figma](https://www.figma.com/design/TFE9CPKgAs2jkgyrTKWjTd/Profile-Card-(Community)?node-id=2-0&node-type=frame&t=TsLDKxExGc84HEKQ-0)
