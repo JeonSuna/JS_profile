@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #main {
+            text-align: center;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="main">
+        <label for="pName">이름을 입력하세요</label>
+        <input type="text" id="pName">
+        <br>
+        <label for="pJop">직업을 입력하세요</label>
+        <input type="text" id="pJop">
+        <br>
+        <label for="pPersonality">특징을 입력하세요</label>
+        <input type="text" id="pPersonality">
+        <br>
+        <label for="pEmail">이메일을 입력하세요</label>
+        <input type="email" id="pEmail">
+        <br>
+        <button onclick="GoP()">go profile</button>
+    </div>
+    <script>
+        function GoP() {
+            let child = window.open('profile.html', '_blank', 'width=600,height=600 ,left=100 ,top=100')
+            child.onload = function resultName() {
+                let inputName = pName.value
+                child.namePrint(inputName)
+                resultJop()
+                resultPer()
+                resultEmail()
+            }
+        }
+           function resultJop() {
+                let inputJop = pJop.value
+                child.jopPrint(inputJop)
+            }
+            function resultPer() {
+                let pPersonality=document.querySelector('#pPersonality')
+                let inputPer = pPersonality.value
+                child.perPrint(inputPer)
+            }
+            function resultEmail() {
+                let inputEmail = pEmail.value
+                child.emailPrint(inputEmail)
+            }
+
+
+
+
+    </script>
+</body>
+
+</html>
