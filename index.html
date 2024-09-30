@@ -18,8 +18,8 @@
         <label for="pName">이름을 입력하세요</label>
         <input type="text" id="pName">
         <br>
-        <label for="pJop">직업을 입력하세요</label>
-        <input type="text" id="pJop">
+        <label for="pJob">직업을 입력하세요</label>
+        <input type="text" id="pJob">
         <br>
         <label for="pPersonality">특징을 입력하세요</label>
         <input type="text" id="pPersonality">
@@ -35,14 +35,14 @@
             child.onload = function resultName() {
                 let inputName = pName.value
                 child.namePrint(inputName)
-                resultJop()
+                resultJob() 
                 resultPer()
                 resultEmail()
             }
         }
-        function resultJop() {
-            let inputJop = pJop.value
-            child.jopPrint(inputJop)
+        function resultJob() {
+            let inputJob = pJob.value
+            child.JobPrint(inputJob)
         }
         function resultPer() {
             let pPersonality = document.querySelector('#pPersonality')
@@ -54,7 +54,13 @@
             child.emailPrint(inputEmail)
         }
 
-
+    // function GoP() {
+    //     window.open('profile.html', '_blank', 'width=600,height=600 ,left=100 ,top=100')
+    //     namePrint()
+    //     resultJob()
+    //     resultPer()
+    //     resultEmail()
+    // }
 
 
     </script>
